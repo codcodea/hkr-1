@@ -39,8 +39,16 @@ section.about {
 	font-size: 0.9em;
 
 	z-index: 3;
-	background-color: white;
-	color: black;
+	background-color: var(--white-0);
+	color: var(--gray-1);
+
+    & p{
+        margin-bottom: 1rem;
+    }
+
+    & a {
+        color: var(--accent);
+    }
 }
 
 .image-wrapper {
@@ -57,15 +65,6 @@ section.about {
 	clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
 	animation: morph 3s 2s 1 both;
 }
-
-.text-wrapper p {
-	margin-top: 1rem;
-}
-
-.text-wrapper a {
-	color: rgb(211, 108, 108);
-}
-
 
 .image {
 	width: 100%;

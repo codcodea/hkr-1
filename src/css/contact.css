@@ -1,28 +1,27 @@
-
 section.contact {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 5vh 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 5vh 0;
 }
 
 article.wrapper {
-    min-width: 40vw;
+	min-width: 40vw;
 	padding: 3rem;
 	background-image: linear-gradient(to bottom, rgba(252, 252, 252, 0.713), rgb(237, 237, 237)),
 		url("/public/newton/newton10.jpg");
 	background-position: -10px;
-	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+	box-shadow: var(--shadow);
 }
 
 fieldset {
 	padding: 2rem;
 	font-weight: 600;
 	font-size: 1.5rem;
-	border: 2px solid #090909d4;
-	border-radius: 2px;
-	background-color: #e4e4e4a8;
+	border: 2px solid var(--gray-2);
+	border-radius: 0px;
+	background-color: var(--gray-8);
 }
 
 label {
@@ -35,14 +34,18 @@ label {
 
 input {
 	width: 100%;
-	border: 1px solid #414f5e;
+	border: 1px solid var(--gray-4);
 	padding: 6px 6px 6px 25px;
 	margin-bottom: 10px;
-}
 
-input:focus {
-	border: 1px solid #d53535;
-	outline: none;
+	&:focus {
+		border: 1px solid var(--accent);
+		outline: none;
+	}
+
+    &::placeholder {
+		color: var(--gray-1);
+	}
 }
 
 textarea {
@@ -52,39 +55,46 @@ textarea {
 	opacity: 0.7;
 	border: none;
 	resize: both;
+	border: 1px solid var(--gray-4);
+	outline: none;
 	transition: opacity 0.5s ease-in-out;
-}
 
-textarea:focus {
-	outline: 1px solid #d53535;
-	opacity: 1;
+	&:focus {
+		border: 1px solid var(--accent);
+		opacity: 1;
+	}
+
+    &::placeholder {
+		color: var(--gray-1);
+	}
 }
 
 input[type="submit"] {
-	border: none;
-	outline: none;
-	background-color: #000000;
-	opacity: 0.9;
-	color: white;
-	padding: 10px;
-	width: 40px;
-	transition: scale 0.2s ease-in-out;
-	font-size: 1rem;
-	font-weight: 600;
-}
 
-input[type="submit"]:hover {
-	scale: 1.03;
+    width: 40px;
+	padding: 10px;
+	font-size: 0.8rem;
+    font-weight: 600;
+
+    border: none;
+	outline: none;
+	background-color: var(--gray-0);
+
+    opacity: 0.9;
+	color: var(--white-0);
+
+    transition: scale 0.2s ease-in-out;
+
+    &:hover {
+        scale: 1.03;
+        cursor: pointer;
+    }
 }
 
 input[type="checkbox"] {
 	display: inline-block;
 	width: 20px;
-	accent-color: #d34d3b;
-}
-
-input[type="checkbox"]:hover {
-	outline: none;
+	accent-color: var(--accent);
 }
 
 #submit {
@@ -96,54 +106,52 @@ input[type="checkbox"]:hover {
 	background: url("/public/icons/subject.png") no-repeat 5px center;
 	background-size: 12px;
 	background-color: transparent;
-	color: #252525;
+	color: var(--gray-1);
 }
 
 #name {
 	background: url("/public/icons/name.png") no-repeat 5px center;
 	background-size: 11px;
 	background-color: transparent;
-	color: #252525;
+	color: var(--gray-1);
 }
 
 #email {
 	background: url("/public/icons/at.png") no-repeat 5px center;
 	background-size: 12px;
 	background-color: transparent;
-	color: #252525;
+	color: var(--gray-1);
 }
 
 #name:focus,
 #email:focus,
 #subject:focus {
-	background-color: #edf0f7;
+	background-color: var(--white-1);
 }
-
 
 @media screen and (max-width: 680px) {
 	article.wrapper {
 		background-image: none;
-        padding: 2rem;
-        width: 80vw;
+		padding: 2rem;
+		width: 80vw;
 	}
 
-    textarea {
-        min-width: 100%;
-        width: 100%;
-        resize: none;
-    }
-    
+	textarea {
+		min-width: 100%;
+		width: 100%;
+		resize: none;
+	}
 }
 
 @media screen and (min-width: 681px) and (max-width: 1124px) {
-    article.wrapper {
+	article.wrapper {
 		background-image: none;
-        padding: 2rem;
-        min-width: 50vw;
+		padding: 2rem;
+		min-width: 50vw;
 	}
 
-    textarea {
-        min-width: 100%;
-        width: 100%;
-    }
+	textarea {
+		min-width: 100%;
+		width: 100%;
+	}
 }

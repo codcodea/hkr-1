@@ -61,7 +61,7 @@ footer {
 		grid-template: 2fr 1fr 1fr / 1fr;
 
         & ul {
-            display: flex;
+            display: flex;  /* due to made not visible in toolbar */
         }
 	}
 
