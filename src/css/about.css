@@ -19,11 +19,8 @@ section.about {
 	align-items: center;
 
     background-color:var(--gray-3);
-
 	clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
 	transition: clip-path 0.3s cubic-bezier(0.7, 0.21, 1, 1);
-
-  
 
     &:hover {
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
@@ -38,7 +35,7 @@ section.about {
 	opacity: 0.7;
 
 	padding: 12% 10%;
-	font-size: 0.9em;
+	font-size: 1em;
 
 	z-index: 3;
 	background-color: var(--white-0);
@@ -47,11 +44,15 @@ section.about {
     box-shadow: var(--shadow);
 
     & p{
-        margin-bottom: 1rem;
+        margin-bottom: 0.7rem;
     }
 
     & a {
         color: var(--accent);
+    }
+
+    & h1 {
+        margin-bottom: 1rem;
     }
 }
 

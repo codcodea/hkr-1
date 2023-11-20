@@ -25,7 +25,7 @@ class Toolbar extends HTMLElement {
 
 	addEvents() {
 		const hamburger = this.querySelector(".hamburger");
-		const menu = this.querySelector(".menu-wrapper");
+		const menu = this.querySelector(".menu-items");
 		const menuItems = this.querySelectorAll(".menu");
 
 		hamburger.addEventListener("click", () => menu.classList.toggle("hamburger-active"));

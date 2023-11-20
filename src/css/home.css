@@ -1,16 +1,9 @@
 section.home {
 	display: flex;
 	flex-direction: column;
-	justify-content: flex-start;
+	justify-content: center;
 	align-items: center;
     gap: 1.5rem;
-}
-
-iframe {
-	width: 70%;
-	aspect-ratio: 16/9;
-	opacity: 0.8;
-    margin-top: 12vh;
 }
 
 h3 {
@@ -45,6 +38,8 @@ article.home{
 	width: 30%;
 	aspect-ratio: 1;
 	perspective: 1000px;
+
+    user-select: none;
 
 	&.flip-card:hover .inner-wrapper {
 		transform: rotateY(180deg);
