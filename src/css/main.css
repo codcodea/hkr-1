@@ -10,15 +10,20 @@
 
 :root {
     --accent: rgb(233, 57, 57);
+    --accent-transparent: rgba(233, 57, 57, 0.8);
+    --accent-hover: rgb(233, 57, 57, 0.6);
+    --bg-color: rgb(252, 252, 252);
+    --bg-section: rgb(244, 244, 244);
     --white-0: white;
     --white-1: #f1f1f1;
     --gray-0: rgb(9, 9, 9);
-    --gray-1: #181818;
-    --gray-2: #393939;
-    --gray-3: #5b5b5b;
-    --gray-4: #707070;
+    --gray-1: #131313;
+    --gray-2: #212121;
+    --gray-3: #393939;
+    --gray-4: #5b5b5b;
+    --gray-5: #707070;
     --gray-8: #e6e6e6bb;
-    --shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    --shadow: rgba(50, 50, 50, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
 
 html {
@@ -26,7 +31,7 @@ html {
 }
 
 body {
-    background-color: rgb(246, 246, 246)
+    background-color: var(--bg-color);
 }
 
 main {
@@ -38,9 +43,8 @@ main {
 section {
     width: 100%;
     min-height: 1000px;
-    background-color: rgb(239, 239, 239);
+    background-color: var(--bg-section);
 }
-
 
 .body {
     width: 100%;

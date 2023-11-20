@@ -7,7 +7,8 @@ nav {
 	flex-direction: row;
 	justify-content: space-between;
     align-items: center;
-    background-color: #474747;
+    background-color: var(--gray-2);
+    z-index: 10;
 }
 
 .logo {
@@ -21,7 +22,7 @@ nav {
 }
 
 .menu {
-    --menu-start: 85px;
+    --menu-start: 95px;
     --offset-y: 45px;
 
     width: 200px;
@@ -34,10 +35,10 @@ nav {
 	display: flex;
 	align-items: center;
 
-    background-color: rgb(225, 128, 128);
+    background-color: var(--accent-transparent);
 	
     &:hover {
-        background-color: rgb(225, 128, 128, 0.8);
+        background-color: var(--accent-hover);
     }
 
     &.a {
@@ -72,13 +73,11 @@ ul {
     }
     
     & li:hover {
-        background-color: #252525;
-        color: tomato;
+        background-color: var(--accent-hover);
     }
     
     & li.active {
-        background-color: #252525;
-        color: tomato;
+        background-color: var(--accent-hover);
     }
 }
 

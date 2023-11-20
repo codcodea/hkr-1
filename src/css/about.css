@@ -18,10 +18,12 @@ section.about {
 	justify-content: center;
 	align-items: center;
 
-    background-color: rgba(39, 39, 39, 0.518);
+    background-color:var(--gray-3);
 
 	clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
 	transition: clip-path 0.3s cubic-bezier(0.7, 0.21, 1, 1);
+
+  
 
     &:hover {
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
@@ -41,6 +43,8 @@ section.about {
 	z-index: 3;
 	background-color: var(--white-0);
 	color: var(--gray-1);
+
+    box-shadow: var(--shadow);
 
     & p{
         margin-bottom: 1rem;

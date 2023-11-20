@@ -3,6 +3,7 @@ section.gallery {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+    
 }
 
 /* gallery */
@@ -12,6 +13,9 @@ article.wrapper {
 	display: grid;
 	grid-template: repeat(3, 200px) / repeat(3, 200px);
 	gap: 1.5rem;
+
+    padding: 2.5rem;
+    box-shadow: var(--shadow);
 
 	& .gallery-item {
 		overflow: hidden;
@@ -39,7 +43,7 @@ dialog {
 	opacity: 0.9;
 
 	outline: none;
-	background-color: rgb(36, 36, 36);
+	background-color: var(--gray-2);
 
 	user-select: none;
 
@@ -51,11 +55,11 @@ dialog {
     
     & figcaption {
         position: absolute;
-        bottom: 0;
+        bottom: 14px;
         left: 0;
         width: 100%;
         padding: 1rem;
-        background-color: rgba(15, 15, 15, 0.925);
+        background-color: var(--gray-2);
         color: white;
         text-align: center;
         font-size: 1.2rem;
@@ -71,6 +75,8 @@ dialog {
 		grid-template: repeat(9, 200px) / 1fr;
 		gap: 4rem;
 
+        box-shadow: none;
+
 		& .gallery-item img {
 			width: 80vw;
 			object-fit: cover;
@@ -83,6 +89,8 @@ dialog {
 		padding: 10rem 5rem;
 		grid-template: repeat(6, 200px) / repeat(2, 1fr);
 		gap: 2rem;
+
+        box-shadow: none;
 
 		& .gallery-item img {
 			width: 30vw;
