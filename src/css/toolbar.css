@@ -1,0 +1,126 @@
+
+nav {
+    position: relative;
+    height: 80px;
+    display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+    align-items: center;
+    background-color: #474747;
+}
+
+.logo {
+	width: 60px;
+	margin-left: 20px;
+	filter: invert(90%);
+}
+
+.menu-wrapper {
+    display: none;
+}
+
+.menu {
+    --menu-start: 85px;
+    --offset-y: 45px;
+
+    width: 200px;
+	height: 40px;
+    padding: 10px;
+
+	position: absolute;
+    left: 25px;
+
+	display: flex;
+	align-items: center;
+
+    background-color: rgb(225, 128, 128);
+	
+    &:hover {
+        background-color: rgb(225, 128, 128, 0.8);
+    }
+
+    &.a {
+        top: var(--menu-start);
+    }
+    &.b {
+        top: calc(var(--menu-start) + var(--offset-y));
+    }
+    &.c {
+        top: calc(var(--menu-start) + (var(--offset-y) * 2));
+    }
+    &.d {
+        top: calc(var(--menu-start) + (var(--offset-y) * 3));
+    }
+}
+
+ul {
+	list-style-type: none;
+	margin-right: 0.5rem;
+	padding: 0;
+	
+	display: flex;
+	flex-direction: row;
+    color: white;
+
+    & li {
+        padding: 0.5em;
+        margin: 0.5em;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 0.3s background-color, 0.3s color;
+    }
+    
+    & li:hover {
+        background-color: #252525;
+        color: tomato;
+    }
+    
+    & li.active {
+        background-color: #252525;
+        color: tomato;
+    }
+}
+
+a:link, a:visited {
+	text-decoration: none;
+	color: white;
+}
+
+.hamburger {
+    display: none;
+}
+
+.hamburger-active {
+    display: flex;
+}
+
+@media screen and (max-width: 680px) {
+	.logo {
+		margin-right: 20px;
+	}
+    
+	.hamburger {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		margin-right: 20px;
+
+        & img {
+            width: 30px;
+            height: 30px;
+            margin-left: 25px;
+            filter: invert(80%);
+        }
+	}
+
+	ul {
+		display: none;
+	}
+}
+
+@media screen and (min-width: 681px) {
+    .menu-wrapper {
+        display: none;
+    }    
+}

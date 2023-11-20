@@ -1,0 +1,86 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: monospace;
+}
+
+body {
+    overflow: hidden;
+    overscroll-behavior: none;
+    background-color: aliceblue;
+}
+
+header {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    scale: 1;
+    animation: bg 1s ease-in-out 1s normal forwards;
+    transition: scale 1s ease-in;
+}
+
+img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+button {
+    position: absolute;
+    top: 88%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    height: 40px;
+    opacity: 0;
+    
+    background-color: #922420;
+    color: rgb(255, 255, 255);
+    border: none;
+    outline: none;
+   
+    font-size: 12px;
+    opacity: 1;
+
+    /* opacity: 0; */
+    transition: width 0.3s ease-in-out;
+    animation: fadein 1s ease-in-out 2s normal forwards, heartbeat 2s 4s infinite;
+
+    z-index: 2;
+}
+
+button:hover + header {
+    scale: 1.04;
+}
+@keyframes fadein {
+    0% {
+        transform: translate(-50%, -50%);
+        width: 0;
+        opacity: 0;
+    }
+    100% {
+        transform: translate(-50%, -50%);
+        width: 150px;
+        opacity: 0.9;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    }
+}
+
+@keyframes bg {
+    0% {
+        scale: 1.1;
+    }
+    100% {
+        scale: 1;
+    }
+}
+
+@keyframes heartbeat {
+    0%, 25%, 50%, 100% {
+        transform: translate(-50%, -50%) scale(1);
+    }
+    8%, 35% {
+        transform: translate(-50%, -50%) scale(1.15);
+    }
+}

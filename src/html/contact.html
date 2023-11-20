@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="/src/css/main.css" />
+        <link rel="stylesheet" href="/src/css/contact.css" />
+		<title>P1</title>
+	</head>
+	<body>
+		<main>
+			<header>
+				<img src="/public/newton/newton21.jpg" alt="cover image snow" />
+			</header>
+            
+            <my-toolbar active="contact"> </my-toolbar>
+
+			<section class="contact">
+				<article class="wrapper">
+					<form method="post" enctype="text/plain" action="mailto:fredrik.halsius@gmail.com">
+						<fieldset>
+							<legend> Contact form: </legend>
+							<label for="subject">Subject: </label> <br />
+							<input placeholder="Subject" list="subjects" name="subject" id="subject" autofocus />
+							<datalist id="subjects">
+								<option value="Greeting"></option>
+								<option value="Feedback"></option>
+							</datalist>
+							<br />
+							<label for="name">Namn: </label><br />
+							<input type="text" id="name" name="name" placeholder="Your name" /><br />
+							<label for="email">E-mail: </label><br />
+							<input
+								type="email"
+								id="email"
+								name="email"
+								placeholder="Your e-mail adress"
+								required
+								pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+							/>
+                            <br />
+							<label for="message">Your message: </label><br />
+							<textarea name="message" id="message" placeholder="..." rows="5"></textarea>
+							<br />
+		
+							<input type="checkbox" id="reply" name="reply" />
+							<label for="reply">Want reply</label><br />
+                            <input id="submit" type="submit" value="Send" />
+						</fieldset>
+					</form>
+				</article>
+			</section>
+
+			<my-footer> </my-footer>
+            <script type="module" src="/src/js/main.js"></script>
+		</main>
+	</body>
+</html>

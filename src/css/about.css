@@ -1,0 +1,87 @@
+section.about {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.card {
+    position: relative;
+    width: 70%;
+	min-height: 400px;
+
+	margin: 10vh 0;
+	padding: 5%;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+    background-color: rgba(39, 39, 39, 0.518);
+
+	clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+	transition: clip-path 0.3s cubic-bezier(0.7, 0.21, 1, 1);
+
+    &:hover {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+}
+
+.text-wrapper {
+	position: absolute;
+	width: 70%;
+	height: 320px;
+
+	opacity: 0.7;
+
+	padding: 12% 10%;
+	font-size: 0.9em;
+
+	z-index: 3;
+	background-color: white;
+	color: black;
+}
+
+.image-wrapper {
+	position: absolute;
+
+	width: 85%;
+	height: 200px;
+
+	overflow: hidden;
+
+	mix-blend-mode: overlay;
+	filter: saturate(0);
+
+	clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+	animation: morph 3s 2s 1 both;
+}
+
+.text-wrapper p {
+	margin-top: 1rem;
+}
+
+.text-wrapper a {
+	color: rgb(211, 108, 108);
+}
+
+
+.image {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	user-select: none;
+}
+
+@keyframes morph {
+	0% {
+		clip-path: polygon(49% 0, 50% 50%, 50% 100%, 50% 50%);
+	}
+	50% {
+		clip-path: polygon(50% 0, 100% 48%, 50% 100%, 0 50%);
+	}
+	100% {
+		clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+	}
+}
