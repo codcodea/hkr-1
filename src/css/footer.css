@@ -22,7 +22,7 @@ footer {
 
 	& img {
 		width: 220px;
-		height: 190px;
+		height: 160px;
 	}
 }
 
@@ -51,10 +51,19 @@ footer {
 		height: 25px;
 		filter: invert(85%);
 		margin-left: 10px;
+        transition: all 0.2s ease-in-out;
+	}
+
+    @media (hover: hover) {
+        & img:hover {
+            filter: invert(100%);
+            scale: 1.08;
+        }
+    
 	}
 }
 
-@media screen and (max-width: 680px) {
+@media ( width <= 680px ) {
 	footer {
 		padding: 5%;
 		display: grid;
@@ -71,7 +80,7 @@ footer {
 
 		& img {
 			width: 160px;
-			height: 120px;
+			height: 110px;
 		}
 	}
 
@@ -91,7 +100,7 @@ footer {
 	}
 }
 
-@media screen and (min-width: 681px) and (max-width: 1124px) {
+@media (681px <= width <= 1124px)  {
 	.footer {
 		display: grid;
 		grid-template-rows: 1fr 1fr / 1fr 1fr;
@@ -109,3 +118,4 @@ footer {
 		grid-column: 1 / span 2;
 	}
 }
+
