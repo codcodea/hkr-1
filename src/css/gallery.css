@@ -26,6 +26,12 @@ article.wrapper {
 		width: 200px;
 		aspect-ratio: 1;
 		object-fit: cover;
+
+        transition: transform 0.2s ease-in-out;
+
+        &:hover {
+            transform: scale(1.03);
+        }
 	}
 }
 
@@ -33,7 +39,7 @@ article.wrapper {
 
 dialog {
 	width: min(75vw, 850px);
-	height: fit-content;
+	height: auto;
 
 	position: fixed;
 	top: 50%;
@@ -43,13 +49,14 @@ dialog {
 	opacity: 0.9;
 
 	outline: none;
+    border: none;
 	background-color: var(--gray-2);
 
 	user-select: none;
 
 	& img {
 		width: 100%;
-		height: fit-content;
+		height: 100%;
 		object-fit: contain;
 	}
 
@@ -111,7 +118,6 @@ dialog[open] {
 }
 
 @media (681px <= width <= 1124px) {
-
     section.gallery {
         justify-content: flex-start;
 	    align-items: center;
@@ -151,7 +157,6 @@ dialog[open] {
 }
 
 @media screen and (width <= 1200px) and (orientation: landscape) {
-
     dialog {
 		width: 70vw;
 		height: fit-content;

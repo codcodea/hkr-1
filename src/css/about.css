@@ -18,7 +18,7 @@ section.about {
 	justify-content: center;
 	align-items: center;
 
-	background-color: rgb(34, 34, 34);
+	
 
 	@media (hover: hover) {
 		background-color: rgb(36, 4, 4);
@@ -32,6 +32,10 @@ section.about {
 		&:hover.card {
 			background-color: var(--gray-3);
 		}
+	}
+
+    @media not (hover: hover) {
+		background-color: rgb(34, 34, 34);
 	}
 }
 
