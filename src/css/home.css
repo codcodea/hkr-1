@@ -37,7 +37,7 @@ article.home{
 
 .flip-card {
 	width: 30%;
-	aspect-ratio: 1;
+	aspect-ratio: 1/1;
 	perspective: 1000px;
 
     user-select: none;

@@ -1,38 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="icon" href="/public/logo/favicon.png" />
-		<link rel="stylesheet" href="/src/css/main.css" />
-		<link rel="stylesheet" href="/src/css/contact.css" />
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="icon" href="/public/logo/favicon.png">
+		<link rel="stylesheet" href="/src/css/main.css">
+		<link rel="stylesheet" href="/src/css/contact.css">
 		<title>Contact</title>
 	</head>
 	<body>
 		<main>
 			<header>
-				<img src="/public/newton/newton21.jpg" alt="cover image snow" />
+				<img src="/public/newton/newton21.jpg" alt="cover image snow">
 			</header>
 
 			<my-toolbar active="contact"> </my-toolbar>
 
-           
 			<section class="contact">
-                <div id="anchor"></div>
+				<div id="anchor"></div>
 				<article class="wrapper">
 					<form method="post" enctype="text/plain" action="mailto:fredrik.halsius@gmail.com">
 						<fieldset>
 							<legend>Contact form:</legend>
-							<label for="subject">Subject: </label> <br />
-							<input placeholder="Subject" list="subjects" name="subject" id="subject" autofocus />
+
+							<label for="subject">Subject: </label>
+							<input placeholder="Subject" list="subjects" name="subject" id="subject" autofocus>
 							<datalist id="subjects">
 								<option value="Greeting"></option>
 								<option value="Feedback"></option>
 							</datalist>
-							<br />
-							<label for="name">Name: </label><br />
-							<input type="text" id="name" name="name" placeholder="Your name" /><br />
-							<label for="email">E-mail: </label><br />
+							<br>
+
+							<label for="name">Name: </label>
+							<input type="text" id="name" name="name" placeholder="Your name"><br>
+
+							<label for="email">E-mail: </label>
 							<input
 								type="email"
 								id="email"
@@ -40,15 +42,15 @@
 								placeholder="Your e-mail adress"
 								required
 								pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
-							/>
-							<br />
-							<label for="message">Your message: </label><br />
-							<textarea name="message" id="message" placeholder="...with kind regards" rows="5"></textarea>
-							<br />
+							><br>
 
-							<input type="checkbox" id="reply" name="reply" />
-							<label for="reply">Want reply</label><br />
-							<input id="submit" type="submit" value="Send" />
+							<label for="message">Your message: </label>
+							<textarea name="message" id="message" placeholder="...with kind regards" rows="5"></textarea><br>
+
+							<input type="checkbox" id="reply" name="reply">
+							<label for="reply">Want reply</label>
+
+							<input id="submit" type="submit" value="Send">
 						</fieldset>
 					</form>
 				</article>

@@ -132,11 +132,9 @@ a:link, a:visited {
     0% {
         transform: translateX(0);
     }
-
     30% {
         transform: translateX(4px);
     }
-
     100% {
         transform: translateX(0px);
     }
