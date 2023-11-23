@@ -1,5 +1,3 @@
-
-
 const getTemplate = async (url) => {
     const folder = url.substring(0, url.lastIndexOf("/"));
 

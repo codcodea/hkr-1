@@ -4,6 +4,7 @@ section.gallery {
 	justify-content: center;
 	align-items: center;
 	gap: 1.5rem;
+  
 }
 
 /* gallery */
@@ -26,7 +27,7 @@ article.wrapper {
 		width: 200px;
 		aspect-ratio: 1;
 		object-fit: cover;
-
+    
         transition: transform 0.2s ease-in-out;
 
         &:hover {

@@ -1,4 +1,3 @@
-
 import getTemplate from "../index.js";       
 const url = import.meta.url;
 

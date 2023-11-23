@@ -46,7 +46,7 @@ section {
     background-color: var(--bg-section);
 }
 
-.body {
-    width: 100%;
-    height: 50vh;
+img {
+    -webkit-user-drag: none;
+    user-select: none;
 }

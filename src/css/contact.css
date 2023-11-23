@@ -11,8 +11,10 @@ article.wrapper {
 	min-width: 40vw;
 	padding: 3rem;
 	background-image: linear-gradient(to bottom, rgba(252, 252, 252, 0.713), rgb(237, 237, 237)),
-		url("/public/newton/newton10.jpg");
-	background-position: -10px;
+		url("../../public/img/newton10.jpg");
+    background-size: cover;
+    background-position: left;
+    background-repeat: no-repeat;
 	box-shadow: var(--shadow);
 }
 
@@ -103,21 +105,21 @@ input[type="checkbox"] {
 }
 
 #subject {
-	background: url("/public/icons/subject.png") no-repeat 5px center;
+	background: url("../../public/icons/subject.png") no-repeat 5px center;
 	background-size: 12px;
 	background-color: transparent;
 	color: var(--gray-1);
 }
 
 #name {
-	background: url("/public/icons/name.png") no-repeat 5px center;
+	background: url("../../public/icons/name.png") no-repeat 5px center;
 	background-size: 11px;
 	background-color: transparent;
 	color: var(--gray-1);
 }
 
 #email {
-	background: url("/public/icons/at.png") no-repeat 5px center;
+	background: url("../../public/icons/at.png") no-repeat 5px center;
 	background-size: 12px;
 	background-color: transparent;
 	color: var(--gray-1);
