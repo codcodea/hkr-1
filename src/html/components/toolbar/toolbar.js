@@ -6,17 +6,10 @@ class Toolbar extends HTMLElement {
 		super();
 	}
 
-    static get observedAttributes() {
-        return ['active'];
-    }
-
-    attributeChangedCallback(name, oldValue, newValue) {
-       this.active = newValue;
-    }
-
 	async connectedCallback() {
 		const template = await getTemplate(url);
    	
+        this.active = window.location.pathname.split("/").pop().split(".")[0];  /* domain.com/src/html/home.html#anchor => home */
 		this.appendChild(template.content.cloneNode(true));
         this.addEvents();
         this.setActiveState();
@@ -31,6 +24,7 @@ class Toolbar extends HTMLElement {
 		menuItems.forEach((item) => item.addEventListener("click", () => menu.classList.remove("hamburger-active")));
 	}
 
+    // set red background on active menu item
     setActiveState() {
         this.querySelectorAll("li").forEach((item) => {
             if(item.textContent.toLowerCase() === this.active) {
