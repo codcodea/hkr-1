@@ -13,3 +13,6 @@ class Footer extends HTMLElement {
 }
 
 customElements.define("my-footer", Footer);
+
+// Web Compoents API
+// https://developer.mozilla.org/en-US/docs/Web/API/Web_components

@@ -3,50 +3,51 @@
 @import "hero.css";
 
 * {
-    margin: 0;
-    box-sizing: border-box;
-    font-family: 'Courier New', Courier, monospace
+	margin: 0;
+	box-sizing: border-box;
+	font-family: "Courier New", Courier, monospace;
 }
 
 :root {
-    --accent: rgb(233, 57, 57);
-    --accent-transparent: rgba(233, 57, 57, 0.8);
-    --accent-hover: rgb(233, 57, 57, 0.6);
-    --bg-color: rgb(252, 252, 252);
-    --bg-section: rgb(244, 244, 244);
-    --white-0: white;
-    --white-1: #f1f1f1;
-    --gray-0: rgb(9, 9, 9);
-    --gray-1: #131313;
-    --gray-2: #212121;
-    --gray-3: #393939;
-    --gray-4: #5b5b5b;
-    --gray-5: #707070;
-    --gray-8: #e6e6e6bb;
-    --shadow: rgba(50, 50, 50, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+	--accent: rgb(233, 57, 57);
+	--accent-transparent: rgba(233, 57, 57, 0.8);
+	--accent-hover: rgb(233, 57, 57, 0.6);
+	--bg-color: rgb(252, 252, 252);
+	--bg-section: rgb(244, 244, 244);
+	--white-0: white;
+	--white-1: #f1f1f1;
+	--gray-0: rgb(9, 9, 9);
+	--gray-1: #131313;
+	--gray-2: #212121;
+	--gray-3: #393939;
+	--gray-4: #5b5b5b;
+	--gray-5: #707070;
+	--gray-8: #e6e6e6bb;
+	--shadow: rgba(50, 50, 50, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
 
 html {
-    scroll-behavior: smooth;
+	scroll-behavior: smooth;
 }
 
 body {
-    background-color: var(--bg-color);
+	background-color: var(--bg-color);
 }
 
 main {
-    max-width: 1000px;
-    overflow-x: hidden;
-    margin: 0 auto;
+	max-width: 1000px;
+	overflow-x: hidden;
+	margin: 0 auto;
+	opacity: 0.97;
 }
 
 section {
-    width: 100%;
-    min-height: 1000px;
-    background-color: var(--bg-section);
+	width: 100%;
+	min-height: 1000px;
+	background-color: var(--bg-section);
 }
 
 img {
-    -webkit-user-drag: none;
-    user-select: none;
+	-webkit-user-drag: none;
+	user-select: none;
 }

@@ -35,3 +35,7 @@ class Toolbar extends HTMLElement {
 }
 
 customElements.define("my-toolbar", Toolbar);
+
+
+// Web Compoents API
+// https://developer.mozilla.org/en-US/docs/Web/API/Web_components
