@@ -1,2 +1,2 @@
-## HKR 
-DA558A - Lab1
+## Banksy inspired website
+Vanilla js and vite.js
