@@ -51,3 +51,13 @@ img {
 	-webkit-user-drag: none;
 	user-select: none;
 }
+
+/* Hiding UI until web components are loaded */
+
+main:has(my-toolbar:not(:defined), my-footer:not(:defined)) {
+    display: none;
+}
+
+main:has(my-toolbar, my-footer) {
+    display: block;
+}
