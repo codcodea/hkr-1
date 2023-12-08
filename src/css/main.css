@@ -64,7 +64,7 @@ img {
 	}
 }
 
-@supports not selector(:has(*)) {
+@supports selector(not :has(*)) {
 	main {
         display: block;
     }
