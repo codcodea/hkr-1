@@ -39,7 +39,6 @@ main {
 	overflow-x: hidden;
 	margin: 0 auto;
 	opacity: 0.97;
-    display: none;
 }
 
 section {
@@ -62,10 +61,4 @@ img {
 	main:has(my-toolbar, my-footer) {
 		display: block;
 	}
-}
-
-@supports selector(not :has(*)) {
-	main {
-        display: block;
-    }
 }
