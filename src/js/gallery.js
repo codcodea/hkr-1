@@ -14,8 +14,8 @@ const closeGallery = () => {
 		dialog.close();
 		backdrop.style.filter = "none";
 	};
-	if (!document.startViewTransition) close();
-	else document.startViewTransition(() => close());
+	if (!document?.startViewTransition) close();
+	else document?.startViewTransition(() => close());
 };
 
 const keydown = (e) => {
@@ -26,8 +26,8 @@ const addEvents = (img) => {
 	img.addEventListener("click", (e) => {
 		image.src = e.target.src;
 		figcaption.textContent = e.target.alt;
-		if (!document.startViewTransition) showGallery();
-		else document.startViewTransition(() => showGallery());
+		if (!document?.startViewTransition) showGallery();
+		else document?.startViewTransition(() => showGallery());
 	});
 };
 

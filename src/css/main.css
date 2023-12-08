@@ -39,6 +39,7 @@ main {
 	overflow-x: hidden;
 	margin: 0 auto;
 	opacity: 0.97;
+    display: none;
 }
 
 section {
@@ -52,12 +53,19 @@ img {
 	user-select: none;
 }
 
-/* Hiding UI until web components are loaded */
+/* Hiding UI until web components are loaded  */
+@supports selector(:has(*)) {
+	main:has(my-toolbar:not(:defined), my-footer:not(:defined)) {
+		display: none;
+	}
 
-main:has(my-toolbar:not(:defined), my-footer:not(:defined)) {
-    display: none;
+	main:has(my-toolbar, my-footer) {
+		display: block;
+	}
 }
 
-main:has(my-toolbar, my-footer) {
-    display: block;
+@supports not selector(:has(*)) {
+	main {
+        display: block;
+    }
 }
