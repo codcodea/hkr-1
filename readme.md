@@ -1,3 +1,2 @@
-## HKR 
-Origin: DA558A 
-Adapted for gerenal purpose 7 dec 2023
+## Banksy art 
+Vanilla JS project to show Banksy art with a simple gallery.
