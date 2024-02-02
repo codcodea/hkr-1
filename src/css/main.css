@@ -12,7 +12,7 @@
 	--accent: rgb(233, 57, 57);
 	--accent-transparent: rgba(233, 57, 57, 0.8);
 	--accent-hover: rgb(233, 57, 57, 0.6);
-	--bg-color: rgb(252, 252, 252);
+	--bg-color: rgb(0, 0, 0);
 	--bg-section: rgb(244, 244, 244);
 	--white-0: white;
 	--white-1: #f1f1f1;
@@ -30,15 +30,18 @@ html {
 	scroll-behavior: smooth;
 }
 
-body {
-	background-color: var(--bg-color);
-}
+/* body {
+    background: url("../../public/img/newton15.jpg") no-repeat center center fixed;
+    background-size: cover;
+    background-color: var(--bg-color);
+    backdrop-filter: blur(3px) brightness(0.6);
+} */
 
 main {
 	max-width: 1000px;
 	overflow-x: hidden;
 	margin: 0 auto;
-	opacity: 0.97;
+	/* opacity: 0.97; */
 }
 
 section {
@@ -61,4 +64,13 @@ img {
 	main:has(my-toolbar, my-footer) {
 		display: block;
 	}
+}
+
+@media (width > 1125px) {
+    body {
+        background: url("../../public/img/newton15.jpg") no-repeat center center fixed;
+        background-size: cover;
+        background-color: var(--bg-color);
+        backdrop-filter: blur(3px) brightness(0.2);
+    }
 }

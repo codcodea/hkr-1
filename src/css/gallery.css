@@ -157,9 +157,8 @@ dialog[open] {
 	}
 }
 
-@media screen and (width <= 1200px) and (orientation: landscape) {
+@media screen and (width > 1124px) and (orientation: landscape) {
     dialog {
-		width: 70vw;
 		height: fit-content;
 
 		& img {
